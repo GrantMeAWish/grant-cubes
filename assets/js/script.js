@@ -53,5 +53,55 @@ $(document).ready(function() {
 			}
 		);
 
+		var index = 0;
 
+		$("#carousel-next").click(function() {
+			if (index == 3) {
+				return false;
+			} else if (index == 0) {
+				$("#profile").fadeOut(470);
+				$("#group").fadeIn(470);
+				index += 1;
+			} else if (index == 1) {
+				$("#group").fadeOut(470);
+				$("#solving").fadeIn(470);
+				index += 1;
+			} else {
+				$("#solving").fadeOut(470);
+				$("#small").fadeIn(470);
+				index += 1;
+			}
+		});
+
+		$("#carousel-prev").click(function() {
+			if (index == 0) {
+				return false;
+			} else if (index == 1) {
+				$("#group").fadeOut(470);
+				$("#profile").fadeIn(470);
+				index -= 1;
+			} else if (index == 2) {
+				$("#solving").fadeOut(470);
+				$("#group").fadeIn(470);
+				index -= 1;
+			} else {
+				$("#small").fadeOut(470);
+				$("#solving").fadeIn(470);
+				index -= 1;
+			}
+		});
+
+		$("#carousel-next").hover(function() {
+			$(this).css("opacity", ".5");
+			}, function() {
+				$(this).css("opacity", 1);
+			}
+		);
+
+		$("#carousel-prev").hover(function() {
+			$(this).css("opacity", ".5");
+			}, function() {
+				$(this).css("opacity", 1);
+			}
+		);
 });

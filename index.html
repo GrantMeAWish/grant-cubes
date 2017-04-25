@@ -173,7 +173,16 @@
       <div class="modal-overlay icon5"></div>
         <div class="modal-box">
             <div id="headshot5">
-              <img src="assets/img/profile.jpg" class="headshot-icon">
+              <div id="carousel-prev">
+                  <img class="img-scaled" src="assets/img/arrowleft.png" />
+              </div>
+              <div id="carousel-next">
+                  <img class="img-scaled" src="assets/img/arrowright.png" />
+              </div>
+              <img src="assets/img/profile.jpg" class="headshot-icon" id="profile">
+              <img src="assets/img/group.jpg" class="headshot-icon" id="group">
+              <img src="assets/img/solving.jpg" class="headshot-icon" id="solving">
+              <img src="assets/img/small.jpg" class="headshot-icon" id="small">
               <div class="ok-button icon5">ok</div>
             </div>
             <div class="bio">
@@ -205,26 +214,24 @@
     </div>
 
   <!-- title text -->
-  <div id="main">
-    <div id="titles">
-      <div id="title">Hello cube friends!</div>
-      <div id="sub-title">a page on different Rubik's Cubes</div>
-    </div>
+  <div id="titles">
+    <div id="title">Hello cube friends!</div>
+    <div id="sub-title">a page on different Rubik's Cubes</div>
+  </div>
 
-    <!-- cube icons -->
-    <div id="cubes-container">
-      <div class="cube-container">
-        <img src="assets/img/3x3.png" class="cube-icon icon1" id="cube-icon-1">
-      </div>
-      <div class="cube-container">
-        <img src="assets/img/4x4.png" class="cube-icon icon2" id="cube-icon-2">
-      </div>
-      <div class="cube-container">
-        <img src="assets/img/pyraminx.png" class="cube-icon icon3" id="cube-icon-3">
-      </div>
-      <div class="cube-container">
-        <img src="assets/img/megaminx.png" class="cube-icon icon4" id="cube-icon-4">
-      </div>
+  <!-- cube icons -->
+  <div id="cubes-container">
+    <div class="cube-container">
+      <img src="assets/img/3x3.png" class="cube-icon icon1" id="cube-icon-1">
+    </div>
+    <div class="cube-container">
+      <img src="assets/img/4x4.png" class="cube-icon icon2" id="cube-icon-2">
+    </div>
+    <div class="cube-container">
+      <img src="assets/img/pyraminx.png" class="cube-icon icon3" id="cube-icon-3">
+    </div>
+    <div class="cube-container">
+      <img src="assets/img/megaminx.png" class="cube-icon icon4" id="cube-icon-4">
     </div>
   </div>
 
@@ -235,5 +242,3 @@
 
 <script src="assets/js/jquery-1.9.1.js"></script>
 <script src="assets/js/script.js"></script>
-
-</html>
